@@ -5,6 +5,7 @@ import clearImage from './clear.jpg';
 import rainImage from './rain2.jpg';
 import snowImage from './snow.jpg';
 import cloudsImage from './clouds.jpg';
+import thunderImage from './thunder2.jpg';
 import defaultImage from './mapp.jpg'; 
 
 function App() {
@@ -18,8 +19,12 @@ function App() {
       return rainImage;
     } else if (weatherMain === 'Snow') {
       return snowImage;
-    } else if (weatherMain === 'Clouds') {
+    } else if (weatherMain === 'Mist') {
+      return rainImage;
+    }else if (weatherMain === 'Clouds') {
       return cloudsImage;
+    } else if (weatherMain === 'Thunderstorm') { // 천둥이 내리는 날씨
+      return thunderImage;
     } else if (weatherMain === 'Clear' && weatherDescription.includes('clear')) {
       return clearImage;
     } else {
@@ -79,7 +84,6 @@ const AppWrap = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
 `;
 
 
