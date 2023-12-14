@@ -23,7 +23,7 @@ function App() {
       return rainImage;
     }else if (weatherMain === 'Clouds') {
       return cloudsImage;
-    } else if (weatherMain === 'Thunderstorm') { // 천둥이 내리는 날씨
+    } else if (weatherMain === 'Thunderstorm') { 
       return thunderImage;
     } else if (weatherMain === 'Clear' && weatherDescription.includes('clear')) {
       return clearImage;
