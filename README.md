@@ -12,8 +12,8 @@ CIFAR-10 이미지 분류 프로젝트에 이어, 컴퓨터 비전의 고급 기
 ## 🛠️ 실습 환경
 - **실습 환경:** Google Colaboratory (GPU 환경)
 - **주요 라이브러리:** ultralytics, PyTorch
-- **실습 노트북:** [YOLOv9 Inference Notebook 바로가기](YOLOv9_Object_Detection/yolo_inference_notebook.ipynb)
-  // 👆 이 경로는 사용자님의 실제 ipynb 파일 이름 및 경로로 바꿔주세요.
+- **실습 노트북:** [YOLOv9 Inference Notebook 바로가기](YOLOv9_Object_Detection/yolo.ipynb)
+
 
 ## 🖼️ 탐지 결과 시각화
 // ⚠️ 여기에 다운로드한 '결과 이미지'를 GitHub에 올려서 링크를 걸어야 합니다.
