@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# 🚀 YOLOv9를 활용한 객체 탐지 프로젝트 (Object Detection with YOLOv9)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 프로젝트 개요
+이 프로젝트는 최신 객체 탐지 모델인 YOLOv9를 사용하여 이미지 속의 객체(고양이, 식물 등)를 실시간으로 탐지하고 위치를 파악하는 실습입니다. 
+CIFAR-10 이미지 분류 프로젝트에 이어, 컴퓨터 비전의 고급 기술인 '객체 탐지' 분야를 다룹니다.
 
-## Available Scripts
+## 💡 사용 모델
+- **모델:** YOLOv9 (You Only Look Once, v9)
+- **탐지 객체:** COCO 데이터셋 기반 (80가지 클래스)
+- **사용 가중치:** gelan-c.pt (미리 학습된 가중치 사용)
 
-In the project directory, you can run:
+## 🛠️ 실습 환경
+- **실습 환경:** Google Colaboratory (GPU 환경)
+- **주요 라이브러리:** ultralytics, PyTorch
+- **실습 노트북:** [YOLOv9 Inference Notebook 바로가기](YOLOv9_Object_Detection/yolo_inference_notebook.ipynb)
+  // 👆 이 경로는 사용자님의 실제 ipynb 파일 이름 및 경로로 바꿔주세요.
 
-### `npm start`
+## 🖼️ 탐지 결과 시각화
+// ⚠️ 여기에 다운로드한 '결과 이미지'를 GitHub에 올려서 링크를 걸어야 합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 탐지 대상: 고양이와 식물
+![YOLOv9 Detection Result Example](results/candp_detected.jpg) 
+// 👆 이 경로는 나중에 이미지 파일이 저장될 경로입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💻 실행 방법
+1. ipynb 파일을 Google Colab에서 열고, GPU 런타임을 설정합니다.
+2. Cell을 순서대로 실행하여 YOLOv9 소스 코드 및 가중치를 다운로드합니다.
+3. 새로운 이미지를 업로드하고 탐지 명령어를 실행합니다.
